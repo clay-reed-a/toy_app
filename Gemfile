@@ -10,7 +10,9 @@ gem 'jbuilder',             '2.2.3' # DSL for writing JSONs
 gem 'rails-html-sanitizer', '1.0.1' # prevent XSS, etc, attacks
 gem 'sdoc',                 '0.4.0', group: :doc
 
-group :development, :test do 
+group :development, :test do
+  gem 'awesome_print'
+  gem 'pry-rails' 
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0' # much debugger, so features  
   gem 'web-console', '2.0.0.beta3' # rails c for browser 
